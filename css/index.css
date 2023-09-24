@@ -1,0 +1,146 @@
+@import url(./reset.css);
+@import url(./../font/iconfont.css);
+
+
+/* 扫雷游戏 */
+#container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* 扫雷标题 */
+#container h1 {
+    font-size: 36px;
+}
+
+/* 扫雷难度 */
+#container .btncontain {
+    margin: 20px 0;
+}
+
+/* 扫雷按钮 */
+#container .btncontain button {
+    margin: 0 10px;
+    background-color: #008c8c;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px 7px;
+}
+
+/* 扫雷按钮选定 */
+#container .btncontain button.active {
+    background-color: #09a4f7;
+}
+
+/* 扫雷数据提示 */
+#container .count div {
+    margin: 10px 0;
+}
+
+/* 游戏区域 表格样式 */
+#container .minecontainer table {
+    background-color: #000;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-spacing: 1px;
+    border-collapse: inherit;
+    box-sizing: border-box;
+}
+
+#container .minecontainer table tr td {
+    width: 24px;
+    height: 24px;
+    border: 2px solid;
+    background-color: #ccc;
+    border-color: #fff #787878 #787878 #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+#container .minecontainer table tr td>div {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#container .minecontainer table tr td>div.down {
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+}
+
+#container .minecontainer table tr td>div.one {
+    color: #0332ef;
+}
+
+#container .minecontainer table tr td>div.two {
+    color: #019f02;
+}
+
+#container .minecontainer table tr td>div.three {
+    color: #ff2600;
+}
+
+#container .minecontainer table tr td>div.fore {
+    color: #93208f;
+}
+
+#container .minecontainer table tr td>div.five {
+    color: #ff7f29;
+}
+
+#container .minecontainer table tr td>div.six {
+    color: #ff3fff;
+}
+
+#container .minecontainer table tr td>div.seven {
+    color: #3ffbff;
+}
+
+#container .minecontainer table tr td>div.eight {
+    color: #22ee0f;
+}
+
+#container .minecontainer table tr td>div.mine {
+    opacity: 0;
+}
+
+#container .minecontainer table tr td>div.icon-qizi {
+    color: red;
+    font-size: 16px;
+}
+
+#container .minecontainer table tr td>div.error {
+    opacity: 1;
+    background-color: red;
+    color: #fff;
+}
+
+#container .minecontainer table tr td>div.right.icon-qizi {
+    opacity: 1;
+    background-color: green;
+    color: #fff;
+}
+
+#container div.answer {
+    background-color: #008c8c;
+    border: 1px solid;
+    width: 100px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 15px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}

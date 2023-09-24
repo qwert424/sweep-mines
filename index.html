@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="container" class="section">
+        <!-- 游戏标题 -->
+        <h1>扫雷</h1>
+        <!-- 难度选择 -->
+        <div class="btncontain">
+            <button class="active">初级</button>
+            <button>中级</button>
+            <button>高级</button>
+        </div>
+        <!-- 数据提示 -->
+        <div class="count">
+            <div>总雷数：<span class="allmine"></span></div>
+            <div>插旗数：<span class="allflag"></span></div>
+        </div>
+        <!-- 游戏区域 -->
+        <div class="minecontainer">
+        </div>
+        <div class="answer">答案</div>
+        <div class="answer again">重新开始</div>
+    </div>
+
+
+
+
+    <script src="./js/tool.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
